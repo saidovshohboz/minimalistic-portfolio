@@ -1,3 +1,82 @@
+/* CUSTOM PROPS */
+:root {
+  --green: #5fb4a2;
+  --dark-blue: #203a4c;
+  --grey-blue: #33323d;
+  --light-grey: #fafafa;
+  --grey: #eaeaeb;
+  --red: #f43030;
+
+  --accent-font-family: 'Ibarra Real Nova', 'Times New Roman', serif;
+  --body-font-family: 'Public Sans', 'Arial', sans-serif;
+}
+
+
+/* FONTS */
+@font-face {
+  font-family: "Public Sans";
+  src: url("/fonts/PublicSans-Bold.woff2") format("woff2"),
+    url("/fonts/PublicSans-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Ibarra Real Nova";
+  src: url("/fonts/IbarraRealNova-Regular.woff2") format("woff2"),
+    url("/fonts/IbarraRealNova-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Public Sans";
+  src: url("/fonts/PublicSans-Thin.woff2") format("woff2"),
+    url("/fonts/PublicSans-Thin.woff") format("woff");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Ibarra Real Nova";
+  src: url("/fonts/IbarraRealNova-Bold.woff2") format("woff2"),
+    url("/fonts/IbarraRealNova-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Public Sans";
+  src: url("/fonts/PublicSans-Regular.woff2") format("woff2"),
+    url("/fonts/PublicSans-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Public Sans";
+  src: url("/fonts/PublicSans-BoldItalic.woff2") format("woff2"),
+    url("/fonts/PublicSans-BoldItalic.woff") format("woff");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Public Sans";
+  src: url("/fonts/PublicSans-Medium.woff2") format("woff2"),
+    url("/fonts/PublicSans-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+
 /* GLOBAL */
 html {
   box-sizing: border-box;
@@ -17,11 +96,11 @@ body {
   height: 100%;
   padding: 0;
   margin: 0;
-  font-family: "Arial", sans-serif;
+  font-family: var(--body-font-family);
   font-size: 16px;
-  line-height: 1.5;
+  line-height: 30px;
   background-color: #fff;
-  color: #222;
+  color: var(--grey-blue);
 }
 
 img {
@@ -68,9 +147,9 @@ select:-webkit-autofill:focus {
 /* CONTAINER */
 .container {
   width: 100%;
-  max-width: 1200px;
-  padding-left: 50px;
-  padding-right: 50px;
+  max-width: 1148px;
+  padding-left: 24px;
+  padding-right: 24px;
   margin-left: auto;
   margin-right: auto;
 }
