@@ -41,15 +41,32 @@
 
   <!-- MAIN-CONTENT -->
   <main class="main-content">
-    <div class="container">
-      <a class="cta-button" href="#">
-        <span class="cta-button__inner">
-          <span class="cta-button__append">
-            <svg class="cta-button__icon" xmlns="http://www.w3.org/2000/svg" width="24" height="22" fill="none"><path stroke="#fff" d="m18 12-6 6-6-6M18 6l-6 6-6-6"/></svg>
-          </span>
-          <span class="cta-button__text">About me</span>
-        </span>
-      </a>
+
+    <!-- HERO -->
+    <div class="hero">
+      <div class="hero__container container">
+        <picture class="hero__picture">
+          <source srcset="img/hero-img-desktop.jpg" media="(min-width: 1024px)">
+          <source srcset="img/hero-img-tablet.jpg" media="(min-width: 500px)">
+           <img class="hero__img" src="img/hero-img-mobile.jpg" alt="Logo" width="311" height="271" srcset="">
+        </picture>
+
+        <div class="hero__text-wrapper">
+          <h1 class="hero__heading">Hey, I’m Alex Spencer and I love building beautiful websites</h1>
+
+          <a class="cta-button" href="#">
+            <span class="cta-button__inner">
+              <span class="cta-button__append">
+                <svg class="cta-button__icon" xmlns="http://www.w3.org/2000/svg" width="24" height="22" fill="none"><path stroke="#fff" d="m18 12-6 6-6-6M18 6l-6 6-6-6"/></svg>
+              </span>
+              <span class="cta-button__text">About me</span>
+            </span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+
 
       <hr>
       <a class="button" href="#">Go to portfolio</a>
@@ -62,7 +79,7 @@
   <footer class="site-footer">
     <div class="site-footer__container container">
       <a class="site-footer__logo logo" href="index.html">
-        <img class="logo__img" src="img/logo-dark.svg" alt="Logo" width="61" height="32">
+        <img class="logo__img" src="img/logo-light.svg" alt="Logo" width="61" height="32">
       </a>
 
 
