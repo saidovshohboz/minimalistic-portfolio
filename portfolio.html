@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Shohboz's Portfolio</title>
+  <title>Shohboz's Portfolio List</title>
 
   <!-- Stylesheets -->
   <link rel="stylesheet" href="css/normalize.css">
@@ -21,10 +21,10 @@
         <!-- SITENAV -->
         <nav class="site-header__sitenav sitenav sitenav--site-header">
           <ul class="sitenav__list">
-            <li class="sitenav__item sitenav__item--active">
+            <li class="sitenav__item">
               <a class="sitenav__link" href="index.html">Home</a>
             </li>
-            <li class="sitenav__item">
+            <li class="sitenav__item sitenav__item--active">
               <a class="sitenav__link" href="portfolio.html">Portfolio</a>
             </li>
             <li class="sitenav__item">
@@ -41,39 +41,54 @@
 
   <!-- MAIN-CONTENT -->
   <main class="main-content">
+    <h1 class="visually-hidden">Portfolio</h1>
+    <h2 class="visually-hidden">Projects list</h2>
 
-    <!-- HERO -->
-    <div class="hero">
-      <div class="hero__container container">
-        <picture class="hero__picture">
-          <source srcset="img/hero-img-desktop.jpg" media="(min-width: 1024px)">
-          <source srcset="img/hero-img-tablet.jpg" media="(min-width: 500px)">
-           <img class="hero__img" src="img/hero-img-mobile.jpg" alt="Logo" width="311" height="271" srcset="">
+    <div class="container">
+      <div class="img-text-info">
+        <picture class="img-text-info__picture">
+          <img class="img-text-info__img" src="img/manage-preview-desktop.jpg" alt="Preview of project bookmark">
         </picture>
+        <div class="img-text-info__info">
+          <h3 class="img-text-info__title">Manage</h3>
+          <p class="img-text-info__description">This project required me to build a fully responsive landing page to the designs provided. I used HTML5, along with CSS Grid and JavaScript for the areas that required interactivity, such as the testimonial slider.</p>
+          <a class="button" href="project-info-manage.html">View Project</a>
+        </div>
+      </div>
 
-        <div class="hero__text-wrapper">
-          <h1 class="hero__heading">Hey, I’m Alex Spencer and I love building beautiful websites</h1>
+      <div class="img-text-info">
+        <picture class="img-text-info__picture">
+          <img class="img-text-info__img" src="img/bookmark-preview-desktop.jpg" alt="Preview of project insure">
+        </picture>
+        <div class="img-text-info__info">
+          <h3 class="img-text-info__title">Manage</h3>
+          <p class="img-text-info__description">This project required me to build a fully responsive landing page to the designs provided. I used HTML5, along with CSS Grid and JavaScript for the areas that required interactivity, such as the testimonial slider.</p>
+          <a class="button" href="project-info-manage.html">View Project</a>
+        </div>
+      </div>
 
-          <a class="cta-button" href="#">
-            <span class="cta-button__inner">
-              <span class="cta-button__append">
-                <svg class="cta-button__icon" xmlns="http://www.w3.org/2000/svg" width="24" height="22" fill="none"><path stroke="#fff" d="m18 12-6 6-6-6M18 6l-6 6-6-6"/></svg>
-              </span>
-              <span class="cta-button__text">About me</span>
-            </span>
-          </a>
+      <div class="img-text-info">
+        <picture class="img-text-info__picture">
+          <img class="img-text-info__img" src="img/insure-preview-desktop.jpg" alt="Preview of project fylo">
+        </picture>
+        <div class="img-text-info__info">
+          <h3 class="img-text-info__title">Manage</h3>
+          <p class="img-text-info__description">This project required me to build a fully responsive landing page to the designs provided. I used HTML5, along with CSS Grid and JavaScript for the areas that required interactivity, such as the testimonial slider.</p>
+          <a class="button" href="project-info-manage.html">View Project</a>
+        </div>
+      </div>
+
+      <div class="img-text-info">
+        <picture class="img-text-info__picture">
+          <img class="img-text-info__img" src="img/fylo-desktop.jpg" alt="Preview of project manage">
+        </picture>
+        <div class="img-text-info__info">
+          <h3 class="img-text-info__title">Manage</h3>
+          <p class="img-text-info__description">This project required me to build a fully responsive landing page to the designs provided. I used HTML5, along with CSS Grid and JavaScript for the areas that required interactivity, such as the testimonial slider.</p>
+          <a class="button" href="project-info-manage.html">View Project</a>
         </div>
       </div>
     </div>
-
-
-
-<!--
-   <div class="container">
-     <a class="button" href="#">Go to portfolio</a>
-     <button class="button" type="button">View projects</button>
-   </div> -->
-
   </main>
 
 
