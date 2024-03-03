@@ -291,6 +291,18 @@ select:-webkit-autofill:focus {
 }
 
 
+/* IMG-TEXT-INFO-LIST */
+.img-text-info-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.img-text-info-list__item:not(:last-child) {
+  margin-bottom: 72px;
+}
+
+
 /* SITE-HEADER */
 .site-header {
   position: relative;
@@ -347,6 +359,7 @@ select:-webkit-autofill:focus {
   flex-grow: 1;
 }
 
+
 /* HERO */
 .hero {
   padding-bottom: 96px;
@@ -368,6 +381,34 @@ select:-webkit-autofill:focus {
   line-height: 1.05;
   letter-spacing: -0.357px;
   font-family: var(--accent-font-family);
+}
+
+
+/* CONTACT-CTA */
+.contact-cta {
+  padding-top: 115px;
+  padding-bottom: 80px;
+  text-align: center;
+}
+
+.contact-cta--portfolio-index {
+  padding-top: 80px;
+}
+
+.contact-cta__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-cta__heading {
+  padding-top: 0;
+  padding-bottom: 40px;
+  font-family: var(--accent-font-family);
+  font-size: 40px;
+  line-height: 42px;
+  letter-spacing: -0.357px;
+  order: -1;
 }
 
 
@@ -514,6 +555,32 @@ select:-webkit-autofill:focus {
 
 
 @media only screen and (min-width: 700px) {
+  .contact-cta {
+    padding-top: 96px;
+    padding-bottom: 96px;
+  }
+
+  .contact-cta__container {
+    flex-direction: row;
+  }
+
+  .contact-cta__container::before {
+    flex-grow: 1;
+    width: 113px;
+    height: 1px;
+    background-color: #33323d;
+    opacity: 0.15;
+    margin-left: 32px;
+    margin-right: 32px;
+    content: "";
+  }
+
+  .contact-cta__heading {
+    width: 100%;
+    max-width: 350px;
+    margin-bottom: 0;
+  }
+
   .site-footer {
     padding-top: 24px;
     padding-bottom: 24px;
@@ -610,6 +677,10 @@ select:-webkit-autofill:focus {
     margin-bottom: 48px;
   }
 
+  .img-text-info-list__item:not(:last-child) {
+    margin-bottom: 80px;
+  }
+
   .about-me {
     margin-bottom: 96px;
   }
@@ -698,5 +769,10 @@ select:-webkit-autofill:focus {
   .img-text-info__description {
     font-size: 16px;
     line-height: 30px;
+  }
+
+  .contact-cta {
+    padding-top: 150px;
+    padding-bottom: 150px;
   }
 }
