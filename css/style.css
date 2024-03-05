@@ -478,6 +478,42 @@ select:-webkit-autofill:focus {
 }
 
 
+/* PROJECT-META */
+.project-meta-details__meta {
+  margin-bottom: 48px;
+}
+
+.project-meta__inner {
+  border-top: 1px solid rgba(51, 50, 61, 0.15);
+  border-bottom: 1px solid rgba(51, 50, 61, 0.15);
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.project-meta__heading {
+  margin-top: 0;
+  margin-bottom: 24px;
+  font-family: var(--accent-font-family);
+  font-size: 40px;
+  line-height: 42px;
+  letter-spacing: -0.357px;
+}
+
+.project-meta__description {
+  margin-top: 0;
+  margin-bottom: 24px;
+  font-size: 15px;
+}
+
+.project-meta__tags {
+  margin-bottom: 24px;
+  font-size: 13px;
+  font-weight: bold;
+  line-height: 30px;
+  color: var(--green);
+}
+
+
 /* SITE-FOOTER */
 .site-footer {
   padding-top: 56px;
@@ -752,6 +788,34 @@ select:-webkit-autofill:focus {
   .project-hero__img {
     height: 350px;
   }
+
+  .project-meta-details__meta {
+    margin-bottom: 40px;
+  }
+
+  .project-meta__inner {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: start;
+    align-items: start;
+    grid-gap: 12px;
+  }
+
+  .project-meta__heading {
+    margin-bottom: 0;
+  }
+
+  .project-meta__description {
+    grid-row: 1 / 4;
+    grid-column: 2;
+    margin-bottom: 0;
+  }
+
+  .project-meta__tags {
+    margin-bottom: 0;
+  }
 }
 
 
@@ -831,5 +895,52 @@ select:-webkit-autofill:focus {
   .contact-cta {
     padding-top: 150px;
     padding-bottom: 150px;
+  }
+
+  .project-meta-details__container {
+    display: flex;
+    align-items: flex-start;
+  }
+
+  .project-meta-details__meta {
+    margin-right: 125px;
+    max-width: 350px;
+    margin-bottom: 0;
+  }
+
+  .project-meta__inner {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
+
+  .project-meta__heading {
+    margin-bottom: 28px;
+  }
+
+  .project-meta__description {
+    margin-bottom: 24px;
+  }
+
+  .project-meta__tags {
+    margin-bottom: 32px;
+    font-size: 16px;
+  }
+
+  .project-meta__tag-item:not(:last-child) {
+    margin-bottom: 16px;
+  }
+
+  .project-meta-details__details {
+    flex-grow: 1;
+  }
+
+  .project-meta-details__heading {
+    font-size: 40px;
+    line-height: 42px;
+    letter-spacing: -0.357px;
+    font-family: var(--accent-font-family);
   }
 }
