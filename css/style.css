@@ -502,6 +502,10 @@ select:-webkit-autofill:focus {
 
 
 /* PROJECT-META */
+.project-meta-details {
+  margin-bottom: 64px;
+}
+
 .project-meta-details__meta {
   margin-bottom: 48px;
 }
@@ -581,6 +585,64 @@ select:-webkit-autofill:focus {
 .static-previews__img {
   display: block;
   width: 100%;
+}
+
+
+/* PAGE-CONTROLS */
+.page-controls__inner {
+  display: flex;
+  border-top: 1px solid rgba(51, 50, 61, 0.15);
+  border-bottom: 1px solid rgba(51, 50, 61, 0.15);
+}
+
+.page-controls__inner::before {
+  display: block;
+  height: 150px;
+  content: "";
+  width: 1px;
+  background-color: rgba(51, 50, 61, 0.15);
+}
+
+.page-controls__link {
+  flex-grow: 1;
+  display: grid;
+  padding: 24px;
+  color: var(--grey-blue);
+  text-decoration: none;
+}
+
+.page-controls__link:hover {
+  color: var(--green);
+}
+
+.page-controls__link--prev {
+  order: -1;
+  padding-left: 0;
+}
+
+.page-controls__link--next {
+  padding-right: 0;
+  justify-items: end;
+}
+
+.page-controls__icon {
+  margin-bottom: 16px;
+  width: 10px;
+  height: 16px;
+}
+
+.page-controls__text {
+  order: 1;
+  font-weight: 400;
+  color: rgba(51, 50, 61, 0.5);
+}
+
+.page-controls__title {
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 36px;
+  letter-spacing: 0.286px;
+  font-family: var(--accent-font-family);
 }
 
 
@@ -836,6 +898,10 @@ select:-webkit-autofill:focus {
     height: 350px;
   }
 
+  .project-meta-details {
+    margin-bottom: 80px;
+  }
+
   .project-meta-details__meta {
     margin-bottom: 40px;
   }
@@ -862,6 +928,38 @@ select:-webkit-autofill:focus {
 
   .project-meta__tags {
     margin-bottom: 0;
+  }
+
+  .page-controls__link {
+    align-items: center;
+    padding: 32px;
+    gap: 0 32px;
+  }
+
+  .page-controls__link--prev {
+    grid-template-columns: auto 1fr;
+    padding-left: 0;
+  }
+
+  .page-controls__link--next {
+    padding-right: 0;
+  }
+
+  .page-controls__icon {
+    margin-bottom: 0;
+    grid-row: span 2;
+  }
+
+  .page-controls__link--prev .page-controls__text {
+    grid-column: 2;
+  }
+
+  .page-controls__link--next {
+    grid-template-columns: 1fr auto;
+  }
+
+  .page-controls__link--next .page-controls__icon {
+    order: 1;
   }
 }
 
@@ -942,6 +1040,10 @@ select:-webkit-autofill:focus {
   .contact-cta {
     padding-top: 150px;
     padding-bottom: 150px;
+  }
+
+  .project-meta-details {
+    margin-bottom: 64px;
   }
 
   .project-meta-details__container {
