@@ -97,8 +97,8 @@ body {
   padding: 0;
   margin: 0;
   font-family: var(--body-font-family);
-  font-size: 16px;
-  line-height: 30px;
+  font-size: 1rem;
+  line-height: 187.5%;
   background-color: var(--light-grey);
   color: var(--grey-blue);
 }
@@ -148,7 +148,7 @@ select:-webkit-autofill:focus {
 /* CONTAINER */
 .container {
   width: 100%;
-  max-width: 1180px;
+  max-width: 73.75rem;
   padding-left: 32px;
   padding-right: 32px;
   margin-left: auto;
@@ -191,10 +191,10 @@ select:-webkit-autofill:focus {
 .sitenav__link {
   display: block;
   color: #fff;
-  font-size: 12px;
+  font-size: 0.75rem;
   text-decoration: none;
   text-transform: uppercase;
-  letter-spacing: 2px;
+  letter-spacing: 0.125rem;
   text-align: center;
   white-space: nowrap;
 }
@@ -212,17 +212,66 @@ select:-webkit-autofill:focus {
 }
 
 
+/* CTA_BUTTON */
+.cta-button {
+  min-width: 12.5rem;
+  display: inline-block;
+  text-decoration: none;
+  border: 0;
+  padding: 0;
+  color: #fff;
+  background-color: var(--dark-blue);
+  cursor: pointer;
+}
+
+.cta-button:hover {
+  background-color: var(--green);
+}
+
+.cta-button:active {
+  opacity: 0.6;
+}
+
+.cta-button__inner {
+  display: flex;
+}
+
+.cta-button__append {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 48px;
+  height: 48px;
+  color: var(--green);
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.cta-button:hover .cta-button__append {
+  color: #fff;
+}
+
+.cta-button__text {
+  flex-grow: 1;
+  text-transform: uppercase;
+  letter-spacing: 0.125rem;
+  padding: 17px;
+  font-size: 0.75rem;
+  line-height: normal;
+  text-align: center;
+}
+
+
 /* BUTTON */
 .button {
   display: inline-block;
   border: 1px solid var(--grey-blue);
   color: var(--grey-blue);
-  font-size: 12px;
+  font-size: 0.75rem;
   line-height: normal;
   padding: 16px 32px;
   text-decoration: none;
   text-transform: uppercase;
-  letter-spacing: 2px;
+  letter-spacing: 0.125rem;
   background-color: transparent;
   cursor: pointer;
   white-space: nowrap;
@@ -240,6 +289,7 @@ select:-webkit-autofill:focus {
 .button:disabled {
   pointer-events: none;
   opacity: 0.2;
+  cursor: not-allowed;
 }
 
 
@@ -300,10 +350,10 @@ select:-webkit-autofill:focus {
 .img-text-info__title {
   margin-top: 0;
   margin-bottom: 24px;
-  font-size: 40px;
-  line-height: 42px;
+  font-size: 2.5rem;
+  line-height: 105%;
   font-family: var(--accent-font-family);
-  letter-spacing: -0.357px;
+  letter-spacing: -0.02231rem;
 }
 
 .img-text-info--index-about .img-text-info__title {
@@ -313,7 +363,7 @@ select:-webkit-autofill:focus {
 .img-text-info__description {
   margin-top: 0;
   margin-bottom: 24px;
-  font-size: 15px;
+  font-size: 0.9375rem;
   line-height: 2;
 }
 
@@ -358,8 +408,8 @@ select:-webkit-autofill:focus {
   right: 32px;
   top: 88px;
   padding: 40px;
-  min-width: 223px;
-  max-width: calc(100% - 64px);
+  min-width: 13.9375rem;
+  max-width: calc(100% - 4rem);
   background-color: var(--grey-blue);
 }
 
@@ -408,9 +458,9 @@ select:-webkit-autofill:focus {
 .hero__heading {
   margin-top: 0;
   margin-bottom: 32px;
-  font-size: 40px;
+  font-size: 2.5rem;
   line-height: 1.05;
-  letter-spacing: -0.357px;
+  letter-spacing: -0.02231rem;
   font-family: var(--accent-font-family);
 }
 
@@ -436,59 +486,10 @@ select:-webkit-autofill:focus {
   padding-top: 0;
   padding-bottom: 40px;
   font-family: var(--accent-font-family);
-  font-size: 40px;
-  line-height: 42px;
-  letter-spacing: -0.357px;
+  font-size: 2.5rem;
+  line-height: 105%;
+  letter-spacing: -0.02231rem;
   order: -1;
-}
-
-
-/* CTA_BUTTON */
-.cta-button {
-  min-width: 200px;
-  display: inline-block;
-  text-decoration: none;
-  border: 0;
-  padding: 0;
-  color: #fff;
-  background-color: var(--dark-blue);
-  cursor: pointer;
-}
-
-.cta-button:hover {
-  background-color: var(--green);
-}
-
-.cta-button:active {
-  opacity: 0.6;
-}
-
-.cta-button__inner {
-  display: flex;
-}
-
-.cta-button__append {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 48px;
-  height: 48px;
-  color: var(--green);
-  background-color: rgba(0, 0, 0, 0.1);
-}
-
-.cta-button:hover .cta-button__append {
-  color: #fff;
-}
-
-.cta-button__text {
-  flex-grow: 1;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  padding: 17px;
-  font-size: 12px;
-  line-height: normal;
-  text-align: center;
 }
 
 
@@ -529,22 +530,22 @@ select:-webkit-autofill:focus {
   margin-top: 0;
   margin-bottom: 24px;
   font-family: var(--accent-font-family);
-  font-size: 40px;
-  line-height: 42px;
-  letter-spacing: -0.357px;
+  font-size: 2.5rem;
+  line-height: 105%;
+  letter-spacing: -0.02231rem;
 }
 
 .project-meta__description {
   margin-top: 0;
   margin-bottom: 24px;
-  font-size: 15px;
+  font-size: 0.9375rem;
 }
 
 .project-meta__tags {
   margin-bottom: 24px;
-  font-size: 13px;
+  font-size: 0.8125rem;
   font-weight: bold;
-  line-height: 30px;
+  line-height: 187.5%;
   color: var(--green);
 }
 
@@ -559,8 +560,8 @@ select:-webkit-autofill:focus {
   margin-bottom: 28px;
   font-weight: 400;
   font-family: var(--accent-font-family);
-  font-size: 30px;
-  line-height: 42px;
+  font-size: 2rem;
+  line-height: 105%;
 }
 
 .project-details__heading--static-previews {
@@ -646,9 +647,9 @@ select:-webkit-autofill:focus {
 }
 
 .page-controls__title {
-  font-size: 32px;
-  line-height: 36px;
-  letter-spacing: 0.286px;
+  font-size: 2rem;
+  line-height: 112.5%;
+  letter-spacing: 0.01788rem;
   font-family: var(--accent-font-family);
 }
 
@@ -667,9 +668,9 @@ select:-webkit-autofill:focus {
 .two-column-section__heading {
   margin-top: 0;
   margin-bottom: 24px;
-  font-size: 40px;
-  line-height: 42px;
-  letter-spacing: -0.357px;
+  font-size: 2.5rem;
+  line-height: 105%;
+  letter-spacing: -0.02231rem;
   font-family: var(--accent-font-family);
 }
 
@@ -696,8 +697,8 @@ select:-webkit-autofill:focus {
 .form__label {
   align-self: flex-start;
   margin-bottom: 8px;
-  font-size: 13px;
-  line-height: 30px;
+  font-size: 0.8125rem;
+  line-height: 187.5%;
   color: var(--grey-blue);
   font-weight: 700;
   opacity: 0.8;
@@ -706,8 +707,8 @@ select:-webkit-autofill:focus {
 .form__field {
   display: block;
   width: 100%;
-  font-size: 13px;
-  line-height: 30px;
+  font-size: 0.8125rem;
+  line-height: 187.5%;
   color: var(--grey-blue);
   border: 1px solid transparent;
   padding: 9px 16px;
@@ -719,13 +720,36 @@ select:-webkit-autofill:focus {
   min-height: 96px;
 }
 
+.form__field:not(:focus):not(:placeholder-shown):valid {
+  border-color: var(--green);
+}
+
+.form__field:not(:focus):not(:placeholder-shown):invalid {
+  border-color: var(--red);
+}
+
+.form__error-message {
+  display: none;
+  margin-top: 4px;
+  color: var(--red);
+  font-weight: 700;
+  font-size: 0.625rem;
+  font-style: italic;
+  line-height: normal;
+}
+
+.form__field:not(:focus):not(:placeholder-shown):invalid ~ .form__error-message {
+  display: block;
+}
+
+
 /* SOLID-BUTTON */
 .solid-button {
   display: inline-block;
   text-align: center;
-  font-size: 12px;
+  font-size: 0.75rem;
   line-height: normal;
-  letter-spacing: 2px;
+  letter-spacing: 0.125rem;
   text-decoration: none;
   text-transform: uppercase;
   border: 0;
@@ -766,14 +790,14 @@ select:-webkit-autofill:focus {
 }
 
 
-@media only screen and (min-width: 400px) {
+@media only screen and (min-width: 25em) {
   .project-hero__img {
     height: 190px;
   }
 }
 
 
-@media only screen and (min-width: 500px) {
+@media only screen and (min-width: 31.25em) {
   .hero__img {
     height: 600px;
   }
@@ -784,7 +808,7 @@ select:-webkit-autofill:focus {
 }
 
 
-@media only screen and (min-width: 550px) {
+@media only screen and (min-width: 34.375em) {
   .img-text-info {
     display: flex;
     align-items: center;
@@ -828,14 +852,14 @@ select:-webkit-autofill:focus {
   }
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 37.5em) {
   .project-hero__img {
     height: 290px;
   }
 }
 
 
-@media only screen and (min-width: 700px) {
+@media only screen and (min-width: 43.75em) {
   .contact-cta {
     padding-top: 96px;
     padding-bottom: 96px;
@@ -894,7 +918,7 @@ select:-webkit-autofill:focus {
 }
 
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 48em) {
   .container {
     padding-left: 40px;
     padding-right: 40px;
@@ -1071,14 +1095,14 @@ select:-webkit-autofill:focus {
 }
 
 
-@media only screen and (min-width: 900px) {
+@media only screen and (min-width: 56.25em) {
   .project-hero__img {
     height: 400px;
   }
 }
 
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 64em) {
   .main-content--contact-page {
     padding-bottom: 60px;
   }
@@ -1092,7 +1116,7 @@ select:-webkit-autofill:focus {
   }
 
   .hero__heading {
-    font-size: 50px;
+    font-size: 3.125rem;
     line-height: 1;
     margin-bottom: 56px;
   }
@@ -1127,7 +1151,7 @@ select:-webkit-autofill:focus {
 }
 
 
-@media only screen and (min-width: 1180px) {
+@media only screen and (min-width: 73.75em) {
   .site-header {
     padding-bottom: 54px;
   }
@@ -1159,8 +1183,8 @@ select:-webkit-autofill:focus {
   }
 
   .img-text-info__description {
-    font-size: 16px;
-    line-height: 30px;
+    font-size: 1rem;
+    line-height: 187.5%;
   }
 
   .contact-cta {
@@ -1201,7 +1225,7 @@ select:-webkit-autofill:focus {
 
   .project-meta__tags {
     margin-bottom: 32px;
-    font-size: 16px;
+    font-size: 1rem;
   }
 
   .project-meta__tag-item:not(:last-child) {
